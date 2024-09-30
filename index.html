@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calu() {
+
+            alert("ola digite seu nome");
+            $nome = window.prompt();
+            alert("agora digite sua idade");
+            $idade = window.prompt();
+            alert("digite M para homem e F para mulher");
+            $sexo = window.prompt();
+            if ($sexo == "M") {
+                document.writeln("O aluno " + $nome);
+                document.write("Possui " + $idade +
+                    " anos de idade");
+            }
+            else {
+                document.writeln("A aluna " + $nome);
+                document.write("Possui " + $idade +
+                    " anos de idade");
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="submit" value="iniciar" onclick="return calu()">
+</body>
+
+</html>
